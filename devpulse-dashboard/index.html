@@ -40,7 +40,7 @@
         </div>
       </section>
       <!-- Feature Section -->
-      <section class="feature-section" id="features">
+      <section class="section-container" id="features">
         <header class="feature-header">
           <h2 class="section-title">Tools to Monitor, Manage, and Scale</h2>
           <p class="section-subtitle">
@@ -76,7 +76,167 @@
         </div>
       </section>
       <!-- Pricing Matrix Section -->
+      <section id="pricing" class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">Choose Your Cluster</h2>
+          <p class="section-subtitle">
+            Flexible hosting options designed to fit your infrastructure needs.
+          </p>
+        </header>
+        <div class="tier-pricing-grid">
+          <article class="pricing-card">
+            <h3 class="tier-name">Developer</h3>
+            <p class="tier-desc">
+              For individual developers and small projects.
+            </p>
+            <div class="tier-price">
+              <span class="price-value">$29</span>
+              <span class="price-unit">/month</span>
+            </div>
+            <ul class="tier-features">
+              <li>Up to 3 nodes</li>
+              <li>Basic latency tracking</li>
+              <li>Centralized log aggregation</li>
+              <li>Automated issue alerts</li>
+            </ul>
+            <a href="#register" class="btn btn-outline btn-block"
+              >Deploy with Developer</a
+            >
+          </article>
+          <article class="pricing-card popular">
+            <div class="popular-tag">Most Popular</div>
+            <h3 class="tier-name">Pro Cluster</h3>
+            <p class="tier-desc">For growing teams and demanding workloads.</p>
+            <div class="tier-price">
+              <span class="price-value">$99</span>
+              <span class="price-unit">/month</span>
+            </div>
+            <ul class="tier-features">
+              <li>Up to 25 nodes</li>
+              <li>Advanced latency tracking</li>
+              <li>High-Volume log aggregation</li>
+              <li>Advanced issue alerts</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#register" class="btn btn-primary btn-block"
+              >Deploy with Pro Cluster</a
+            >
+          </article>
+          <article class="pricing-card">
+            <h3 class="tier-name">Enterprise</h3>
+            <p class="tier-desc">
+              For large-scale, mission-critical workloads.
+            </p>
+            <div class="tier-price">
+              <span class="price-value">$499</span>
+              <span class="price-unit">/month</span>
+            </div>
+            <ul class="tier-features">
+              <li>Up to 100 nodes</li>
+              <li>Real-time performance monitoring</li>
+              <li>Dedicated log storage</li>
+              <li>Automated self-healing</li>
+              <li>24/7 priority support</li>
+            </ul>
+            <a href="#register" class="btn btn-outline btn-block"
+              >Deploy with Enterprise</a
+            >
+          </article>
+        </div>
+      </section>
+      <!-- Workload Compatibility and Register Section -->
+      <section class="section-container" id="register">
+        <div class="form-container">
+          <header class="section-header">
+            <h3 class="section-title">Plan Your Deployment</h3>
+            <p class="section-subtitle">
+              Enter your workload requirements and register for API sandbox
+              access.
+            </p>
+          </header>
+
+          <form action="#" method="post" class="leading-form">
+            <div class="form-group">
+              <label for="nodes" class="form-label">
+                Number of Nodes
+                <span class="required-mark">*</span>
+              </label>
+              <input
+                class="form-input"
+                type="number"
+                name="nodes"
+                id="nodes"
+                min="1"
+                max="1000"
+                step="100"
+                placeholder="100"
+                required
+              />
+              <span class="input-range">Min: 1 - Max: 1000</span>
+            </div>
+            <div class="form-group">
+              <label for="throughput" class="form-label">
+                Log throughput (GB/hour)
+                <span class="required-mark">*</span>
+              </label>
+              <input
+                class="form-input"
+                type="number"
+                name="throughput"
+                id="throughput"
+                min="1"
+                max="10000"
+                step="1000"
+                placeholder="5000"
+                required
+              />
+              <span class="input-range">Min: 1 - Max: 10000</span>
+            </div>
+            <div class="form-group">
+              <label for="full-name">
+                Full Name
+                <span class="required-mark">*</span>
+              </label>
+              <input
+                class="form-input"
+                type="text"
+                name="fullname"
+                id="full-name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">
+                Email
+                <span class="required-mark">*</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="abc@xyz.com"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              Request API Sandbox
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p class="footer-copyright">
+          &copy; 2026 DevPulse Inc. Assignment 1 CSI 3150-F26
+        </p>
+        <nav class="footer-links" aria-label="Footer Navigation Links">
+          <a href="#hero">Back to Top</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
